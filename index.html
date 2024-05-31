@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker // ChampyTech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker</h1>
+        <div class="form-group">
+            <label for="colorInput">Select color:</label>
+            <input type="color" id="colorInput" onchange="updateFromColorPicker()">
+        </div>
+        <div class="form-group">
+            <label for="rgbValue">RGB value:</label>
+            <input type="text" id="rgbValue" placeholder="Enter RGB value" onchange="updateFromRgb()">
+        </div>
+        <div class="form-group">
+            <label for="hexValue">Hex value:</label>
+            <input type="text" id="hexValue" placeholder="Enter Hex value" onchange="updateFromHex()">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
